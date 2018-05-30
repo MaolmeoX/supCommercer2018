@@ -16,6 +16,12 @@ public class ShowProductServlet extends HttpServlet {
         String id = req.getParameter("id");
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
-        out.append("<br>" + ProductDao.findProduct(Long.parseLong(id)).toString() + "<br>");
+
+        Product product = ProductDao.findProduct(Long.parseLong(id));
+        if(product != null){
+            out.append(product.toString() + "<br>");
+        } else {
+            out.append("<h1>Le produit n'existe pas !!</h1>");
+        }
     }
 }
