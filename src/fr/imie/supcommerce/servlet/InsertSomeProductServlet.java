@@ -14,7 +14,6 @@ public class InsertSomeProductServlet extends HttpServlet {
     @Override
     public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
         Product product = new Product();
-        product.setId(1L);
         product.setDescription("Ma description");
         product.setName("Mon premier produit");
         product.setPrice(112.85F);

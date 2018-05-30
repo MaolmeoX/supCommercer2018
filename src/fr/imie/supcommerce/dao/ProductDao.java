@@ -13,6 +13,8 @@ public class ProductDao {
     }
 
     public static void addProduct(Product p) {
+        Long newId = Long.valueOf(products.size() + 1);
+        p.setId(newId);
         products.add(p);
     }
 
