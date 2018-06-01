@@ -49,4 +49,7 @@
         <filter-name>AuthenticateFilter</filter-name>
         <url-pattern>/auth/*</url-pattern>
     </filter-mapping>-->
+    <welcome-file-list>
+        <welcome-file>listProduct</welcome-file>
+    </welcome-file-list>
 </web-app>
