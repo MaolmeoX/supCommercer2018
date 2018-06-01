@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 		  http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    <servlet>
+<!--    <servlet>
         <servlet-name>InsertSomeProductServlet</servlet-name>
         <servlet-class>fr.imie.supcommerce.servlet.InsertSomeProductServlet</servlet-class>
     </servlet>
@@ -48,5 +48,5 @@
     <filter-mapping>
         <filter-name>AuthenticateFilter</filter-name>
         <url-pattern>/auth/*</url-pattern>
-    </filter-mapping>
+    </filter-mapping>-->
 </web-app>
