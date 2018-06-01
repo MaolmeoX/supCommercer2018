@@ -15,20 +15,21 @@
 </head>
 <body>
 <jsp:include page="header.jsp"/>
-<%List<Product> products = (ArrayList)request.getAttribute("products"); %>
-<table class="table">
-    <thead>
-    <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Description</th>
-        <th scope="col">Price</th>
-        <th scope="col">Actions</th>
-    </tr>
-    </thead>
-    <tbody>
-        <% for(int i = 0; i < products.size() ; i++)  { %>
-        <% Product product = products.get(i);  %>
+<%List<Product> products = (ArrayList) request.getAttribute("products"); %>
+<div class="container">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+            <th scope="col">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% for (int i = 0; i < products.size(); i++) { %>
+        <% Product product = products.get(i); %>
         <tr>
             <th scope="row"><%= product.getId()%></th>
             <td><%= product.getName()%></td>
@@ -37,7 +38,8 @@
             <td><a class="btn btn-primary" href="/showProduct?id=<%= product.getId() %>" role="button">Show</a></td>
         </tr>
         <% } %>
-    </tbody>
-</table>
+        </tbody>
+    </table>
+</div>
 </body>
 </html>

@@ -12,10 +12,11 @@ public class ProductDao {
         return products;
     }
 
-    public static void addProduct(Product p) {
+    public static Long addProduct(Product p) {
         Long newId = Long.valueOf(products.size() + 1);
         p.setId(newId);
         products.add(p);
+        return p.getId();
     }
 
     public static Product findProduct(Long id) {

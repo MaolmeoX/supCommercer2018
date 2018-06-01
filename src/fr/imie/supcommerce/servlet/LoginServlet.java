@@ -18,8 +18,8 @@ import java.util.Random;
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        RequestDispatcher view = req.getRequestDispatcher("/login.html");
-        view.forward(req, resp);
+        RequestDispatcher rd = req.getRequestDispatcher("/login.jsp");
+        rd.forward(req, resp);
     }
 
     @Override

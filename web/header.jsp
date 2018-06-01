@@ -27,7 +27,7 @@
                 <a class="nav-link" href="/login">Login</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/auth/basicInsert">Insert</a>
+                <a class="nav-link" href="/auth/addProduct">Insert</a>
             </li>
         </ul>
     </div>
